@@ -1,0 +1,223 @@
+.course-header {
+  height: 180px;
+  margin: 25px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.course-path {
+  margin-left: 2rem;
+  animation: delete 0.4s ease-in-out 0s;
+}
+.course-path h3 {
+  font-size: 1.35rem;
+}
+.course-path a {
+  text-decoration: none;
+  color: black;
+}
+.course-path a:hover {
+  text-decoration: underline !important;
+  color: #2796cd !important;
+  transition: all ease-in 0.1s;
+}
+.course-path h3 i {
+  margin-left: 8px;
+  margin-right: 10px;
+}
+
+.this-course {
+  text-decoration: underline !important;
+  color: #033c82 !important;
+  text-transform: capitalize;
+  transition: all ease-in 0.2s;
+}
+.this-course:hover {
+  color: #2796cd !important;
+}
+
+.course-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  height: 53px;
+  border-radius: 2rem;
+  border-width: 0.1px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  animation: delete 0.5s ease-in-out 0s;
+}
+.courseWork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  border-left: solid;
+  border-color: #7d8992;
+  border-width: 0.1px;
+  cursor: pointer;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.courseContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  border-right: solid;
+  border-width: 0.1px;
+  border-color: #7d8992;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  cursor: pointer;
+}
+
+.course-option h3 {
+  font-size: 1.3rem;
+}
+
+.coursework-filter {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 40px;
+  list-style: none;
+  width: 80vw;
+  justify-content: start;
+  margin-left: 10rem;
+
+  position: relative;
+  animation: delete 0.5s ease-in-out 0s;
+}
+
+.filter-link {
+  color: #7d8992;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 2px 0px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.filter-link:hover {
+  color: black;
+}
+
+.filter-link:focus {
+  color: black;
+  border-bottom: solid #1492e6;
+}
+.coursework {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coursework-data {
+  border: solid;
+  border-width: 0.1px;
+  height: fit-content;
+  min-height: 430px;
+  padding: 1.7rem 0;
+  width: 79%;
+  margin: 13px;
+  margin-bottom: 2rem;
+  border-radius: 35px;
+  border-top-left-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: -5px 10px 6px 1px rgba(0, 0, 0, 0.3);
+  animation: delete 0.5s ease-in-out 0s;
+}
+
+.coursework-details {
+  border: solid 0.1px;
+  height: 90px;
+  width: 85%;
+  border-radius: 13px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+}
+.coursework-details:hover {
+  transform: scale(1.03);
+}
+.coursework-img img {
+  width: 40px;
+  margin-left: 20px;
+}
+
+.coursework-text {
+  margin-left: 1.7rem;
+  width: fit-content;
+}
+.coursework-text h2 {
+  text-transform: capitalize;
+}
+.coursework-text p {
+  margin-top: 3px;
+}
+.coursework-text i {
+  margin: 0px 10px;
+  font-size: 1rem;
+  color: black;
+}
+
+.coursework-grade {
+  position: absolute;
+  right: 5%;
+  margin-right: 1rem;
+  color: #4381eb;
+}
+
+.red-finished {
+  position: absolute;
+  left: 51%;
+  font-weight: 500;
+  color: red;
+}
+.green-finished {
+  position: absolute;
+  left: 51%;
+  font-weight: 500;
+  color: green;
+}
+.gray-finished {
+  position: absolute;
+  left: 51%;
+  font-weight: 500;
+  color: gray;
+}
+
+.courseContent-contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.no-coursework {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  gap: 1rem;
+}
+.no-coursework img {
+  width: 4.3rem;
+}
+.no-coursework h2 {
+  text-transform: capitalize;
+  margin-top: 0.7rem;
+}

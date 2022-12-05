@@ -1,0 +1,119 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 0px 10px;
+  margin-top: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.quiz-header {
+  border-bottom: solid;
+  border-width: 1px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  animation: delete 0.4s ease-in-out 0s;
+}
+.quiz-header h1 {
+  position: absolute;
+  left: 0%;
+}
+
+.attempt {
+  position: absolute;
+  right: 0%;
+  font-size: 1.1rem;
+  padding: 9px 15px;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  font-weight: 500;
+  background-color: #1492e6;
+  border-color: rgba(157, 157, 157, 0.462);
+  cursor: pointer;
+  text-transform: capitalize;
+  display: inline-block;
+
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #4481eb 50%,
+    #4481eb 50%,
+    #04befe
+  );
+  background-position: 0%;
+  background-size: 200%;
+  transition: 0.4s;
+}
+
+.quiz-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  left: 0%;
+  margin-top: 1.5rem;
+  border-bottom: solid;
+  border-width: 1px;
+  padding-bottom: 1.5rem;
+  animation: delete 0.5s ease-in-out 0s;
+}
+.quiz-info div {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 3px;
+  left: 0%;
+  gap: 2.5rem;
+}
+
+.quiz-info h3 {
+  width: 20%;
+}
+
+.quiz-instructions {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding: 19px 0px;
+  animation: delete 0.7s ease-in-out 0s;
+}
+
+.important-instructions {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  background-color: #a70000;
+  animation: delete 0.7s ease-in-out 0s;
+}
+
+.important-instructions img {
+  width: 40px;
+  margin: 0.7rem 1rem;
+}
+.important-instructions h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.important-list {
+  width: 40%;
+  height: fit-content;
+  position: relative;
+  right: 5%;
+  margin-top: 1rem;
+}
+.important-list ul li {
+  margin-top: 4px;
+}

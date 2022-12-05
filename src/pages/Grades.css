@@ -1,0 +1,332 @@
+.course-path-grades {
+  margin-left: 4.2rem;
+  margin-top: 3rem;
+  animation: delete 0.3s ease-in-out 0s;
+}
+.course-path-grades h3 {
+  font-size: 1.35rem;
+}
+.course-path-grades a {
+  text-decoration: none;
+  color: black;
+}
+.course-path-grades h3 i {
+  margin-left: 8px;
+  margin-right: 10px;
+}
+.grades-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.grades-page-container {
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  gap: 1.3rem;
+  flex-direction: column;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 2.5rem;
+  border-top-left-radius: 0px !important;
+  box-shadow: -5px 15px 2px 1px rgba(0, 0, 0, 0.1),
+    5px 15px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 2.9rem;
+  margin-bottom: 5rem;
+  background-color: white;
+  min-height: 36rem;
+  animation: delete 0.5s ease-in-out 0s;
+}
+.grades-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grades-container h1 {
+  font-size: 2.9rem;
+  color: #2699fb;
+}
+.grades-container h5 {
+  font-size: 1rem;
+}
+.grades-container h4 {
+  color: #2699fb;
+}
+.grades-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+.title-name {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.grades-table-container h2 {
+  font-size: 1.3rem;
+}
+.grades-table-container table {
+  border: 1px solid rgb(178, 178, 178);
+  width: 90%;
+  border-collapse: collapse;
+}
+.grades-table-container th,
+.grades-table-container td {
+  border-bottom: 1px solid rgb(178, 178, 178);
+  padding: 5px;
+  text-align: center;
+}
+.grades-table-container tr:nth-child(even) {
+  background-color: #bfdae562;
+}
+.table-foter,
+.table-header {
+  background-color: #1799d5 !important;
+  color: #fff;
+}
+.preformance-comment {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 21px;
+  height: 21px;
+  font-size: 1rem;
+  position: relative;
+}
+.preformance-comment h3 {
+  font-size: 0.95rem;
+}
+.grade-info-comments {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.grade-performance-comments {
+  position: absolute;
+  right: 15%;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.grade-info-exclamation {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  font-size: 0.8rem;
+  position: relative;
+}
+.grade-info-exclamation:hover {
+  cursor: pointer;
+}
+.comment-info-container {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid rgba(53, 53, 53, 0.827);
+  left: 3rem;
+  background-color: #fff;
+  border-radius: 0.45rem;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+  max-width: 240px;
+  width: max-content;
+  height: max-content;
+  min-width: 150px;
+  min-height: 100px;
+  padding: 9px;
+  z-index: 1;
+  display: none;
+  animation: closedLeft 0.25s ease-in forwards;
+}
+.comment-info-container.active {
+  display: flex;
+  animation: openedLeft 0.25s ease-in forwards;
+}
+.comment-info-container h3 span {
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.comment-performance-container {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid rgba(53, 53, 53, 0.827);
+  left: 2rem;
+  background-color: #fff;
+  border-radius: 0.45rem;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+  max-width: 240px;
+  width: max-content;
+  height: max-content;
+  max-width: 180px;
+  min-height: 100px;
+  padding: 8px;
+  z-index: 1;
+  display: none;
+  animation: closedLeft 0.25s ease-in forwards;
+}
+.comment-performance-container.active {
+  display: flex;
+  animation: openedLeft 0.25s ease-in forwards;
+}
+.comment-performance-container h3 span {
+  text-transform: capitalize;
+  font-weight: 800;
+}
+@keyframes openedLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.grade-comment {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  min-height: 100% !important;
+}
+/* CSS for animated bouncing loader. */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+/* Loader circles */
+.loader > span {
+  background: #2699fb;
+  border-radius: 50%;
+  margin: 5rem 0.5rem;
+  animation: bouncingLoader 0.6s infinite alternate;
+}
+
+.loader > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Define the animation called bouncingLoader. */
+@keyframes bouncingLoader {
+  from {
+    width: 0.1rem;
+    height: 0.1rem;
+    opacity: 1;
+    transform: translate3d(0);
+  }
+  to {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.1;
+    transform: translate3d(0, -1rem, 0);
+  }
+}
+
+@keyframes delete {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.filter-grade-container {
+  display: flex;
+  width: 95%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4rem !important;
+  animation: delete 0.5s ease-in-out 0s;
+}
+.grade-filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(53, 53, 53, 0.827);
+  border-radius: 5px;
+  padding: 10px;
+  width: 295px;
+  height: 100%;
+  cursor: pointer;
+}
+.grade-filter h4 {
+  text-transform: capitalize;
+  width: 90%;
+  height: 21px;
+  overflow: hidden;
+}
+.grade-filter i {
+  position: absolute;
+  right: 8%;
+}
+.dropdown-grade {
+  display: none;
+  position: absolute;
+  border: 1px solid rgba(53, 53, 53, 0.827);
+  left: 0;
+  top: calc(100% + 0.75rem);
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+  width: max-content;
+  max-height: 188px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  opacity: 0;
+  transform: translateY(-10px);
+  z-index: 1;
+  animation: opened 0.25s ease-in forwards;
+}
+.dropdown-grade::-webkit-scrollbar {
+  width: 0.3vw;
+}
+.dropdown-grade::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(48, 48, 48, 0.721);
+}
+.dropdown-grade h4 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(78, 78, 78, 0.736);
+  width: 100%;
+  height: 45px;
+  text-transform: capitalize;
+  padding: 15px 10px;
+  transition: background-color 0.17s ease-in-out;
+}
+.dropdown-grade.active {
+  display: block;
+}
+
+.dropdown-grade h4:hover {
+  background-color: rgba(193, 193, 193, 0.667);
+  cursor: pointer;
+}
+
+.performance-comment-increase {
+  color: green;
+}
+.performance-comment-decrease {
+  color: red;
+  transform: rotateX(-180deg);
+}
